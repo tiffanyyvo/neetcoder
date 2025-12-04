@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 require('dotenv').config();
-
+const DB_PASSWORD = "SuperSecretPassword123!"; // Noncompliant: hard-coded credential
 const sequelize = process.env.DATABASE_URL
     ? // production db
       new Sequelize(process.env.DATABASE_URL, {

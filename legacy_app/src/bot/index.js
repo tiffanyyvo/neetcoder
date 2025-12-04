@@ -14,10 +14,6 @@ let isInitialized = false;
 const Sequelize = require('sequelize');
 require('dotenv').config();
 
-
-const DB_PASSWORD = "SuperSecretPassword123!"; // Noncompliant: hard-coded credential
-
-
 const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
