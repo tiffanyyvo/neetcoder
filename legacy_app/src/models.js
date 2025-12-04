@@ -264,4 +264,5 @@ module.exports = {
     RoleGroups,
     Votes,
     Books,
+    logInsecurePasswordLength,
 };

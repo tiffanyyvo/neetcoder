@@ -11,6 +11,12 @@ const path = require('node:path');
 require('dotenv').config();
 
 let isInitialized = false;
+const Sequelize = require('sequelize');
+require('dotenv').config();
+
+
+const DB_PASSWORD = "SuperSecretPassword123!"; // Noncompliant: hard-coded credential
+
 
 const client = new Client({
     intents: [
@@ -80,6 +86,8 @@ function initialize() {
         isInitialized = true;
     }
 }
+
+
 
 if (require.main === module) {
     initialize();
